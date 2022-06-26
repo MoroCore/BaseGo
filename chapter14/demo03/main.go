@@ -38,7 +38,7 @@ func test(n int) {
 	for i := 1; i <= int(n); i++ {
 		res *= int64(i)
 	}
-
+	//加锁
 	lock.Lock()
 	myMap[n] = int64(res)
 	lock.Unlock()
